@@ -19,5 +19,7 @@ node {
    stage('PBA'){
       cloudBeesFlowRunPipeline addParam: '{"pipeline":{"pipelineName":"qe pipeline name","parameters":[]}}', configuration: 'flow-server', pipelineName: 'qe pipeline name', projectName: 'qe proj'
    }
-   
+   stage('test'){
+      echo 'test'
+   }
 }
