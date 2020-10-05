@@ -14,6 +14,8 @@ pipeline {
  println "commit 8"
                 println "commit 9"
                 println "commit 10"
+                println "commit 11"
+                println "commit 12"
             }
         }
         stage('Test'){
