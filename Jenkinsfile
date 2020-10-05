@@ -20,4 +20,7 @@ node {
       cloudBeesFlowRunPipeline addParam: '{"pipeline":{"pipelineName":"qe pipeline name","parameters":[]}}', configuration: 'flow-server', pipelineName: 'qe pipeline name', projectName: 'qe proj'
    }
    
+   stage('Echo'){
+      echo "Job is running................"
+   }
 }
