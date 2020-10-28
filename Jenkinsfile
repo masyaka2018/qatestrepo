@@ -1,6 +1,5 @@
 node {
    def mvnHome
-	
    stage('Build') {
       cleanWs()
       git 'https://github.com/masyaka2018/qatestrepo.git'
@@ -16,4 +15,5 @@ node {
    stage('Publish'){
 	    cloudBeesFlowPublishArtifact artifactName: 'com.demo:helloworld', artifactVersion: '${BUILD_NUMBER}-SNAPSHOT', configuration: 'flow-server', filePath: 'target/helloworld-1.0-SNAPSHOT.jar', repositoryName: 'default'
    }
+	
 }
