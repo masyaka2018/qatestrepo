@@ -17,10 +17,6 @@ node {
    }
 	
    stage('PBA'){
-      cloudBeesFlowRunPipeline addParam: '{"pipeline":{"pipelineName":"qe pipeline name","parameters":[]}}', configuration: 'flow-server', pipelineName: 'qe pipeline name', projectName: 'qe proj'
-   }
-   
-   stage('Echo'){
-      echo "Job is running................"
+      cloudBeesFlowRunPipeline addParam: '{"pipeline":{"pipelineName":"qe pipeline","parameters":[]}}', configuration: 'flow-server', pipelineName: 'qe pipeline', projectName: 'qe proj'
    }
 }
