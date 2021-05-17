@@ -16,6 +16,6 @@ stage('Publish'){
   cloudBeesFlowPublishArtifact artifactName: 'com.demo:helloworld', artifactVersion: '${BUILD_NUMBER}-SNAPSHOT', configuration: 'flow-server', filePath: 'target/helloworld-1.0-SNAPSHOT.jar', repositoryName: 'default'
 }
 stage('PBA'){
-    cloudBeesFlowAssociateBuildToRelease configuration: 'flow-server', flowRuntimeId: '69380b52-b4b6-11eb-bc74-42010a00006b', projectName: 'qe proj', releaseName: 'qe release'
+    cloudBeesFlowAssociateBuildToRelease configuration: 'flow-server', flowRuntimeId: '19881d3a-b6f7-11eb-ad3f-42010a00000c', projectName: 'qe proj', releaseName: 'qe release'
  }
 }
